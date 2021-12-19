@@ -1,0 +1,97 @@
+/*
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px; !* Make the masthead heading the same height as the navigation *!
+}
+*/
+
+.scrolling-wrapper {
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.shop-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.shop-header {
+    /*text-align: center !important;*/
+}
+
+.shop-nav {
+    height: 35px;
+}
+
+.shop-search {
+    /*text-align: center !important;*/
+    padding: 5pt 0 5pt 0;
+    /*width: 90%;*/
+}
+
+.shop-search input {
+    width: 100%;
+}
+
+.shop-button {
+    font-size: small;
+    width: 49%;
+}
+
+.shop-goods {
+    flex-grow: 1;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    text-align: center;
+}
+
+.shop-card {
+    display: inline-block;
+    width: 85px;
+    height: 110px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.shop-card img {
+    width: 100%;
+    height: 80px;
+}
+
+.shop-card div {
+    display: inline-block;
+    font-weight: bold;
+    /*font-size: x-small;*/
+    font-size: 11px;
+
+}
+
+.shop-image-grayed {
+    opacity: 0.4;
+    filter: alpha(opacity=30);
+}
+
+
+.font-color-green {
+    color: limegreen !important;
+}
+
+.font-color-red {
+    color: red !important;
+}
+
+
+.font-color-yellow {
+    color: darkorange !important;
+}

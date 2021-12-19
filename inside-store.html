@@ -11,16 +11,18 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/store-utils.js"></script>
     <script type="text/javascript" src="js/network-scan-api.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/inside-store.js"></script>
 </head>
 <body>
+
+
 
 <div class="container-fluid shop-page">
 
     <div class="shop-header">
         <nav class="navbar shop-nav" style="margin-bottom: 40px" >
             <h5 class="text-muted">Добро пожаловать в</h5>
-            <h5 class="text-muted">My Dear Shop - Online!</h5>
+            <h5 class="text-muted">My Dear Shop на набережной!</h5>
             <h5 class="nav nav-pills pull-right"></h5>
         </nav>
         <ul id="shop-list" class="scrolling-wrapper">
@@ -35,128 +37,133 @@
         </ul>
     </div>
 
-        <div style="padding: 5pt 0 5pt 0; text-align: center">ТОВАРЫ</div>
+    <div style="padding: 5pt 0 5pt 0; text-align: center">
+<!--        <button id="button_update_location" class="shop-button" onclick="storeUtils.updateLocation()">Обновить локацию</button>-->
+        <button id="button_call_consultant" class="shop-button" onclick="storeUtils.callConsultant()" data-toggle="modal" data-target="#exampleModalCenter">Вызвать консультанта</button>
+    </div>
+
+    <div style="padding: 5pt 0 5pt 0; text-align: center">ТОВАРЫ</div>
 
     <div class="container vertical-scrollable shop-goods" id="goods">
 
-        <div class="shop-card"  x-cat="laptop">
+        <div class="shop-card" class="font-color-green" x-cat="laptop">
             <img src="img/laptop1.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>Осталось 3 шт.</div>
         </div>
         <div class="shop-card" x-cat="laptop">
             <img src="img/laptop2.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="laptop">
             <img src="img/laptop3.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
 
 
         <div class="shop-card" x-cat="sport">
             <img src="img/sport1.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="sport">
             <img src="img/sport2.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="sport">
             <img src="img/sport3.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
 
 
         <div class="shop-card" x-cat="camera">
             <img src="img/cameras1.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>Начать оформлять</div>
         </div>
         <div class="shop-card" x-cat="camera">
             <img src="img/cameras2.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>Акция</div>
         </div>
         <div class="shop-card" x-cat="camera">
             <img src="img/cameras3.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="camera">
             <img src="img/cameras4.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>Акция</div>
         </div>
 
 
 
         <div class="shop-card" x-cat="smartphone">
             <img src="img/phone1.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="smartphone">
             <img src="img/phone2.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="smartphone">
             <img src="img/phone3.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="smartphone">
             <img src="img/phone4.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="smartphone">
             <img src="img/phone5.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
 
 
         <div class="shop-card" x-cat="3d-printer">
             <img src="img/3d-printers1.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="3d-printer">
             <img src="img/3d-printers2.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="3d-printer">
             <img src="img/3d-printers3.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
 
 
         <div class="shop-card" x-cat="kitchen">
             <img src="img/kitchen1.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
 
 
         <div class="shop-card" x-cat="scales">
             <img src="img/scales1.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="scales">
             <img src="img/scales2.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="scales">
             <img src="img/scales3.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
 
 
         <div class="shop-card" x-cat="headphones">
             <img src="img/headphones1.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="headphones">
             <img src="img/headphones2.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="headphones">
             <img src="img/headphones3.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
         <div class="shop-card" x-cat="headphones">
             <img src="img/headphones4.png"/>
-            <div>В КОРЗИНУ</div>
+            <div>В корзину</div>
         </div>
 
     </div>
