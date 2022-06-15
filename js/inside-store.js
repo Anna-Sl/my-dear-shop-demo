@@ -7,11 +7,11 @@ function openedInPhysicalBrowser(wifiData, bleData) {
     storeUtils.updateGoodsForStore(storeName);
     netScanner.ble.onAvailabilityChanged = changeButtonVisibility;
     if (netScanner.ble.isEnabled) {
-        startPeriodicScanTiUpdateCategories();
+        startPeriodicScanToUpdateCategories();
     }
 }
 
-function startPeriodicScanTiUpdateCategories() {
+function startPeriodicScanToUpdateCategories() {
     setTimeout(function() {
         let options = {
             sort: true,
@@ -25,7 +25,7 @@ function startPeriodicScanTiUpdateCategories() {
 function changeButtonVisibility(isEnabled) {
     if (isEnabled) {
         document.getElementById("button_call_consultant").style.visibility="visible";
-        startPeriodicScanTiUpdateCategories();
+        startPeriodicScanToUpdateCategories();
     } else {
         document.getElementById("button_call_consultant").style.visibility="hidden";
     }
