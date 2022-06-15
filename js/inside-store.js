@@ -15,8 +15,7 @@ function startPeriodicScanToUpdateCategories() {
     setTimeout(function() {
         let options = {
             sort: true,
-            duration: 1000,
-            prefixName: [storeName]
+            duration: 1000
         }
         netScanner.ble.scan(storeUtils.updateCategoriesOrder, null, options);
     }, 2000);
